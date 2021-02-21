@@ -27,7 +27,7 @@
         <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
         <link rel="icon" sizes="192x192" href="images/favicon/icon-192x192.png">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
         <!-- LOAD JQUERY LIBRARY -->
         <script type="text/javascript" src="js/jquery1.11.1.js"></script>
         <!--Revolution slider Css Starts here-->
@@ -1518,7 +1518,7 @@ li.main-tab.dropdown.nav-item:hover > .dropdown-menu {
             function ml(vEmail) {
                 let ml=document.getElementById('email');
                 let fn=document.getElementsByClassName('errorml');
-                let valEmail=/^([\w-\.]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!abc.com)(?!xyz.com)(?!pqr.com)(?!rediffmail.com)(?!live.com)(?!outlook.com)(?!me.com)(?!msn.com)(?!ymail.com)([\w-]+\.)+[\w-]{2,3})?$/;
+                let valEmail=/^([\w-\.]+@([\w-]+\.)+[\w-]{2,3})?$/;
                 if(!vEmail.match(valEmail)) {
                     fn[0].innerHTML='Please Enter Email Id';
                     validationArr["ml"]=false;
